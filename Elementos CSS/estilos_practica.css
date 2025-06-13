@@ -1,0 +1,29 @@
+.estilos_practica{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid rgba(77, 79, 76, 0.533);
+}
+
+.estilos_practica th{
+    background-color: #e9eced;
+    color: rgb(22, 21, 21);
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #0c5671;
+}
+
+.estilos_practica td{
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #6f0202;
+    border-right: 1px solid #6f0202;
+    border-left: 1px solid #6f0202;
+}
+
+.caja_texto{
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #6f0202;
+}
