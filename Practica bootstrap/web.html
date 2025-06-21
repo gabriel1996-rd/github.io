@@ -12,7 +12,7 @@
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/twbs/icons@1.11.3/icons/film.svg" type="image/png">
     <link rel="stylesheet" href="estiloweb.css">
 </head>
-<body>
+
 <nav  class="navbar navbar-expand-lg navbar-cine fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><i class="bi bi-camera-reels"></i>Pop & Corn</a>
@@ -36,10 +36,15 @@
             <i class="bi bi-collection"></i> Generos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><i class="bi bi-lightning-charge"></i>Accion</a></li>
-            <li><a class="dropdown-item" href="#"><i class="bi bi-emoji-dizzy"></i>Terror</a></li>
-            <li><a class="dropdown-item" href="#"><i class="bi bi-emoji-laughing"></i>Comedia</a></li>
+            <li><a class="dropdown-item" href="#accion"><i class="bi bi-lightning-charge"></i>Accion</a></li>
+            <li><a class="dropdown-item" href="#terror"><i class="bi bi-emoji-dizzy"></i>Terror</a></li>
+            <li><a class="dropdown-item" href="#comedia"><i class="bi bi-emoji-laughing"></i>Comedia</a></li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">
+             <i class="bi bi-envelope-paper-fill"></i>Suscribir
+          </button>
         </li>
         
       <form class="d-flex" role="search">
@@ -51,18 +56,73 @@
 </nav>
 
 <div class="container-fluid">
-    <div class="ratio ratio-16x9 mb-4">
+    <div class="ratio ratio-4x3 mb-4">
         <iframe  src="https://www.youtube.com/embed/XXllX0A_9KQ" title="Aprende Bootstrap en 10 minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
    
 <div class="container-fluid">
-    <div class="ratio ratio-16x9">
+    <div class="ratio ratio-4x3">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30275.912926176068!2d-69.9334656!3d18.461491199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea563425e07fcf3%3A0xa827c638232c9a0!2sGarden%20Food%20Trucks!5e0!3m2!1ses-419!2sdo!4v1750027916415!5m2!1ses-419!2sdo"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <br>
-     <div class="text_intro">
+     <div class=" card mb-5 text_intro">
+      <div class="card-body">
+        <h2 class="mb-4"> EL Septimo Arte</h2>
         Séptimo arte es el apelativo por el cual se denota a la cinematografía desde hace más de cien años. Ahora, este término fue acuñado en 1911 por el poeta italiano Riccioto Canudo, y nació a partir de la clásica enumeración de las diferentes artes, que viene desde la antigüedad, y que hasta el momento solo contaba con seis.
         Canudo definió al cine como un “arte plástico en movimiento”, por lo que le pareció que este debía estar enumerado en la lista de las artes. Al ser una expresión de información, valores y sentimientos, el cine se gana este título al igual que las demás artes.
+      </div>
+        
+      </div>
+      <div class="card text_terror" id="terror">
+        <div class="card-header">
+          <h3 class="card-title mb-0"><i class="bi bi-emoji-dizzy"></i>Terror</h3>
+        </div>
+        <div class="card-body">Terror:
+        Las películas de terror han sido importantes desde los orígenes del cine. No olvidemos que muchos expertos consideran que La llegada del tren a la ciudad (Hermanos Lumière, 1895), el primer film de la historia, pertenece a este género. Cuando se proyectó, los asistentes salieron corriendo de la sala ante el temor de que el tren fuese real.
+
+        Más allá de posibles polémicas, a lo largo de estos más de 125 años han sido publicadas miles de películas de miedo. Un hecho que, irremediablemente, ha dado lugar a la aparición de diversos subgéneros.</div>
+        <p>Subgeneros de Terror:</p>
+        <ul>
+          <li><strong>Terror psicológico:</strong> Se centra en el miedo mental y emocional (Ej: El resplandor)</li>
+          <li><strong>Slasher:</strong> Asesinos en serie que persiguen a sus víctimas (Ej: Halloween)</li>
+          <li><strong>Zombies:</strong> Apocalipsis con muertos vivientes (Ej: The Walking Dead)</li>
+          <li><strong>Found footage:</strong> Material "encontrado" que documenta eventos terroríficos (Ej: Actividad Paranormal)</li>
+          <li><strong>Folk horror:</strong> Terror basado en folklore y tradiciones (Ej: Midsommar)</li>
+        </ul>
+
+
+      </div>
+      <div class=" card text_comedia" id="comedia">
+        <div class="card-header">
+          <h3 class="card-title mb-0"><i class="bi bi-emoji-laughing"> Comedia</i></h3>
+        </div>
+        <div class="card-body">Comedia: Las películas de comedia son tan antiguas como el cine mismo. Se considera que la primera de su tipo, filmada en celuloide y proyectada en pantalla grande, fue El regador regado (1895) de los hermanos Lumière. El regador regado, que tanto júbilo causó en los espectadores de finales del siglo XIX, fue además de las primerísimas producciones que derivó en un sin número de copias y remakes. Dice Román Gubern, en su libro La historia del cine, que aquel gag de los Lumière “hizo germinar muchas semillas en el campo del cine cómico francés”. </div>
+       <p>La comedia cinematográfica ha evolucionado a través de varias etapas:</p>
+       <ul>
+          <li><strong>Época del cine mudo:</strong> Chaplin, Keaton y Lloyd dominaban la pantalla con humor físico</li>
+          <li><strong>Comedia screwball (alocada):</strong> Diálogos rápidos y situaciones absurdas (años 30-40)</li>
+          <li><strong>Comedia de situación:</strong> Equívocos y malentendidos que generan situaciones hilarantes</li>
+          <li><strong>Parodias:</strong> Películas que ridiculizan otros géneros o películas famosas</li>
+          <li><strong>Comedia negra:</strong> Humor que aborda temas serios o tabú de manera irreverente</li>
+        </ul>
+      </div>
+
+      <div class="card text_accion" id="accion">
+        <div class="card-header"><h3 class="card-title mb-0"><i class="bi bi-lightning-charge"></i> Accion</h3> 
+        </div>
+        <div class="card-body">Accion:Aunque la acción ha sido una parte fundamental del cine, dando dinamismo a las películas y emocionando al espectador, el género de acción no es reconocido como tal hasta los años 80. Según algunos críticos, la primera película de acción fue  Asalto y robo de un tren ( The Great Train Robbery) de Edwin S. Porter estrenada en 1903.
+          <div >
+            <p>Las películas de acción se caracterizan por:</p>
+                <ul>
+                    <li>Secuencias de persecuciones emocionantes</li>
+                    <li>Coreografías de lucha elaboradas</li>
+                    <li>Efectos especiales impresionantes</li>
+                    <li>Protagonistas carismáticos y valientes</li>
+                    <li>Argumentos que mantienen en vilo al espectador</li>
+                </ul>
+            </div>
+        </div>
+      
       </div>
 
     <img src="e92ed228a6924420a8963bdc6c9ddef1.webp" alt="Imagen de peliculas" class="image">
@@ -70,26 +130,47 @@
         <a href="#" aria-label="Volver al menú principal">
         <img src="popcorn1-1551x2048.webp" alt="Volver al menú principal" height="70px">
     </a>
+    
+  
+</div>
+</div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Gracias por visitarnos</strong> 
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 
-   
-
-
-   
-  
-
-
-
-
-
-
-
-
-
-
-
-
+    
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Suscribite a nuestra pagina</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fs-5">Presiona este boton para colocar tu correo</h2>
+          <p> <button class="btn btn-secondary" data-bs-toggle="popover" title="Correo" data-bs-content="Algun form para capturar datos correo">Aqui</button> No te pierdas ninguna novedad</p>
+          <hr>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+     
 
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"> </script> 
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      //  popover
+      const popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      popoverTriggerList.forEach(function(trigger) {
+        new bootstrap.Popover(trigger);
+      });
+    });
+  </script>
 </body>
 </html>

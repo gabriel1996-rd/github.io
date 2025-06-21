@@ -30,6 +30,47 @@
     cursor: pointer;
 }
 
+.text_terror{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    background-color: #f5f5f5;
+    color: black;
+    padding: 20px;
+    scroll-margin-top: 80px;
+    
+}
+.text_comedia{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    background-color: #f5f5f5;
+    color: black;
+    padding: 20px;
+    scroll-margin-top: 80px;
+}
+.text_accion{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    background-color: #f5f5f5;
+    color: black;
+    padding: 20px;
+    scroll-margin-top: 80px;
+}
+.card-genre {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+.card-header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+.card-title {
+  margin: 0;
+}
+
 
 .navbar-cine{
    background: linear-gradient(to right,#0d0d0d, #1a1a1a) !important;
