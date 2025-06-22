@@ -55,16 +55,44 @@
   </div>
 </nav>
 
-<div class="container-fluid">
-    <div class="ratio ratio-4x3 mb-4">
-        <iframe  src="https://www.youtube.com/embed/XXllX0A_9KQ" title="Aprende Bootstrap en 10 minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-   
-<div class="container-fluid">
-    <div class="ratio ratio-4x3">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30275.912926176068!2d-69.9334656!3d18.461491199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea563425e07fcf3%3A0xa827c638232c9a0!2sGarden%20Food%20Trucks!5e0!3m2!1ses-419!2sdo!4v1750027916415!5m2!1ses-419!2sdo"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+
     <br>
+    <div id="carouselPeliculas" class="carousel slide carousel-fade carousel-container">
+     <div class="carousel-inner">
+      <div class="carousel-item active">
+  <img src="john-wick-jeaidqurrfx52d3u.jpg" class="d-block w-100 carousel-img" alt="John Wick">
+  <div class="carousel-caption d-none d-md-block">
+    <h5>John Wick</h5>
+    <p>Keanu Reeves protagoniza esta saga de acción</p>
+  </div>
+</div>
+    <div class="carousel-item">
+       <img src="dont-look-up.jpg" class="d-block w-100 carousel-img" alt="Dont look up">
+        <div class="carousel-caption d-none d-md-block" style="color: black;">
+        <h5>Dont look up</h5>
+        <p>Satira del cambio climatico</p>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="6f291d00-a8bd-4cb8-8d9a-2a5c57476b3f.sized-1000x1000.jpeg" class="d-block w-100 carousel-img" alt="The shining">
+        <div class="carousel-caption d-none d-md-block" style="color: rgb(226, 63, 63);">
+        <h5>The shining</h5>
+        <p>Jack Nicholson protaginza este film de terror psicologico</p>
+       </div>
+     </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPeliculas" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselPeliculas" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+
+
      <div class=" card mb-5 text_intro">
       <div class="card-body">
         <h2 class="mb-4"> EL Septimo Arte</h2>
@@ -73,9 +101,10 @@
       </div>
         
       </div>
-      <div class="card text_terror" id="terror">
-        <div class="card-header">
-          <h3 class="card-title mb-0"><i class="bi bi-emoji-dizzy"></i>Terror</h3>
+      <br>
+      <div class=" card text_intro scroll" id="terror">
+        <div class="card-header terror">
+          <h3 class="card-title mb-0 "><i class="bi bi-emoji-dizzy"></i>Terror</h3>
         </div>
         <div class="card-body">Terror:
         Las películas de terror han sido importantes desde los orígenes del cine. No olvidemos que muchos expertos consideran que La llegada del tren a la ciudad (Hermanos Lumière, 1895), el primer film de la historia, pertenece a este género. Cuando se proyectó, los asistentes salieron corriendo de la sala ante el temor de que el tren fuese real.
@@ -89,26 +118,80 @@
           <li><strong>Found footage:</strong> Material "encontrado" que documenta eventos terroríficos (Ej: Actividad Paranormal)</li>
           <li><strong>Folk horror:</strong> Terror basado en folklore y tradiciones (Ej: Midsommar)</li>
         </ul>
+        
 
 
       </div>
-      <div class=" card text_comedia" id="comedia">
-        <div class="card-header">
+      <br>
+      <div class=" card text_intro scroll" id="comedia">
+        <div class="card-header comedia">
           <h3 class="card-title mb-0"><i class="bi bi-emoji-laughing"> Comedia</i></h3>
         </div>
         <div class="card-body">Comedia: Las películas de comedia son tan antiguas como el cine mismo. Se considera que la primera de su tipo, filmada en celuloide y proyectada en pantalla grande, fue El regador regado (1895) de los hermanos Lumière. El regador regado, que tanto júbilo causó en los espectadores de finales del siglo XIX, fue además de las primerísimas producciones que derivó en un sin número de copias y remakes. Dice Román Gubern, en su libro La historia del cine, que aquel gag de los Lumière “hizo germinar muchas semillas en el campo del cine cómico francés”. </div>
        <p>La comedia cinematográfica ha evolucionado a través de varias etapas:</p>
-       <ul>
-          <li><strong>Época del cine mudo:</strong> Chaplin, Keaton y Lloyd dominaban la pantalla con humor físico</li>
-          <li><strong>Comedia screwball (alocada):</strong> Diálogos rápidos y situaciones absurdas (años 30-40)</li>
-          <li><strong>Comedia de situación:</strong> Equívocos y malentendidos que generan situaciones hilarantes</li>
-          <li><strong>Parodias:</strong> Películas que ridiculizan otros géneros o películas famosas</li>
-          <li><strong>Comedia negra:</strong> Humor que aborda temas serios o tabú de manera irreverente</li>
-        </ul>
+        <div class="accordion accordion-flush" id="accordionComedia">
+  <div class="accordion-item ">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Época del cine mudo
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionComedia">
+      <div class="accordion-body text_acordeon ">Chaplin, Keaton y Lloyd dominaban la pantalla con humor físico</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Comedia screwball (alocada)
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionComedia">
+      <div class="accordion-body text_acordeon">Diálogos rápidos y situaciones absurdas (años 30-40)</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Comedia de situación
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionComedia">
+      <div class="accordion-body text_acordeon">Equívocos y malentendidos que generan situaciones hilarantes</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Parodias
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionComedia">
+      <div class="accordion-body text_acordeon">Películas que ridiculizan otros géneros o películas famosas</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Comedia Negra
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionComedia">
+      <div class="accordion-body text_acordeon">Humor que aborda temas serios o tabú de manera irreverente</div>
+    </div>
+  </div>
+</div>
+        
       </div>
-
-      <div class="card text_accion" id="accion">
-        <div class="card-header"><h3 class="card-title mb-0"><i class="bi bi-lightning-charge"></i> Accion</h3> 
+      
+      <br>
+      
+      <div class="card text_intro scroll" id="accion">
+        <div class="card-header accion"><h3 class="card-title mb-0"><i class="bi bi-lightning-charge"></i> Accion</h3> 
         </div>
         <div class="card-body">Accion:Aunque la acción ha sido una parte fundamental del cine, dando dinamismo a las películas y emocionando al espectador, el género de acción no es reconocido como tal hasta los años 80. Según algunos críticos, la primera película de acción fue  Asalto y robo de un tren ( The Great Train Robbery) de Edwin S. Porter estrenada en 1903.
           <div >
@@ -124,6 +207,18 @@
         </div>
       
       </div>
+        <div class="alert alert-warning alert-dismissible fade show custom-alert" role="alert">
+        <div class="d-flex align-items-center">
+            <i class="bi bi-star-fill me-3" style="font-size: 1.5rem;"></i>
+            <div>
+                <strong>¡Gracias por visitarnos!</strong> 
+                <p class="mb-0 mt-1">Esperamos que hayas disfrutado de nuestro contenido sobre cine</p>
+            </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <br>
+    <br>
 
     <img src="e92ed228a6924420a8963bdc6c9ddef1.webp" alt="Imagen de peliculas" class="image">
     <div class="fijo">
@@ -133,10 +228,6 @@
     
   
 </div>
-</div>
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Gracias por visitarnos</strong> 
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 
     
@@ -158,12 +249,22 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid">
+    <div class="ratio ratio-4x3 mb-4">
+        <iframe  src="https://www.youtube.com/embed/XXllX0A_9KQ" title="Aprende Bootstrap en 10 minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+   
+<div class="container-fluid">
+    <div class="ratio ratio-4x3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30275.912926176068!2d-69.9334656!3d18.461491199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea563425e07fcf3%3A0xa827c638232c9a0!2sGarden%20Food%20Trucks!5e0!3m2!1ses-419!2sdo!4v1750027916415!5m2!1ses-419!2sdo"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
      
 
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"> </script> 
    <script>
     document.addEventListener('DOMContentLoaded', function() {
-      //  popover
+      
       const popoverTriggerList = [].slice.call(
         document.querySelectorAll('[data-bs-toggle="popover"]')
       );

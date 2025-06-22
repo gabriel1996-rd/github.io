@@ -1,5 +1,5 @@
 .image{
-    width: 75%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     transition: 0.3seg;
@@ -20,40 +20,35 @@
     transition: 0.2seg;
 }
 .text_intro:hover{
-    color: #2c2c2c;
-    background-color: #8ad290;
+    color: #3cb2d0;
+    
 }
 .fijo{
     position:fixed;
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-}
-
-.text_terror{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
-    scroll-margin-top: 80px;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     
 }
-.text_comedia{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: medium;
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
+
+.text_intro.scroll{
+    
     scroll-margin-top: 80px;
+    text-align:justify
+    
 }
-.text_accion{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: medium;
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
-    scroll-margin-top: 80px;
+.text_intro.scroll:hover{
+    color: #068785;
+}
+.text_acordeon{
+    padding: 10px;
+    font-weight: bold;
+    color: #1a1a1a;
 }
 .card-genre {
   border: 1px solid #ccc;
@@ -66,9 +61,27 @@
 .card-header {
   border-bottom: 1px solid #ddd;
   margin-bottom: 12px;
+  font-weight: bold;
+  padding: 15px 20px;
+ 
 }
+.card-header.terror{
+    background: #055466;
+    color: white;
+}
+.card-header.comedia{
+    background: #e4890a;
+    color:white;
+}
+.card-header.accion{
+    background: red;
+    color: white;
+}
+
+
 .card-title {
   margin: 0;
+  color: rgb(9, 9, 9);
 }
 
 
@@ -77,16 +90,17 @@
    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7) !important;
    border-bottom: 1px solid #ffd700 !important;
    padding: 10px 0 !important;
+   
 }    
 .navbar-brand{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    color: #eac807;
+    color: #eac807 !important;
     font-size: 1.5rem;
 }
 
 .navbar-brand:hover{
-    color: #fff;
+    color: #fff ;
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 .nav-link {
@@ -137,3 +151,29 @@
     padding: 5px 10px;
 }
 
+.carousel_container{
+    margin-bottom: 30px;
+}
+.carousel_img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+@media (max-width: 992px) {
+    .carousel-img {
+    height: 400px;
+    }
+}
+        
+@media (max-width: 768px) {
+    .carousel-img {
+    height: 300px;
+        }
+}
+        
+ @media (max-width: 576px) {
+    .carousel-img {
+    height: 250px;
+        }
+            
+}
