@@ -30,6 +30,12 @@
             color: black;
             transition: 2s;
         }
+        .cambio_estilo{
+            background-color: blueviolet;
+            font-size: larger;
+            border: 2px red solid;
+
+        }
 
    </style>
 </head>
@@ -37,9 +43,9 @@
     <div class="contenedor">
         <h1> Practica Conceptos JavaScript</h1>
         <div class="panel">
-            <button class="boton"> Mostrar una Alerta</button>
-            <button class="boton"> Cambiar estilo del texto</button>
-            <div id="Elementstyle" aria-colspan="estilo_texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nemo voluptates blanditiis distinctio natus similique error, magnam provident aliquam libero, sint expedita quod neque hic eum. Quibusdam labore accusantium sint nam explicabo magni, ab iure rerum vitae, blanditiis minima perspiciatis aliquam voluptas commodi nostrum quidem recusandae incidunt tenetur dolores debitis!</div>
+            <button class="boton" onclick="alertaboton()"> Mostrar una Alerta</button>
+            <button class="boton" onclick="CambiarEstilo()"> Cambiar estilo del texto</button>
+            <div id="Elementstyle" class="estilo_texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nemo voluptates blanditiis distinctio natus similique error, magnam provident aliquam libero, sint expedita quod neque hic eum. Quibusdam labore accusantium sint nam explicabo magni, ab iure rerum vitae, blanditiis minima perspiciatis aliquam voluptas commodi nostrum quidem recusandae incidunt tenetur dolores debitis!</div>
 
 
 
