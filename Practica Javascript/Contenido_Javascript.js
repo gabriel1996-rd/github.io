@@ -1,8 +1,42 @@
+// Variables y tipos de datos
+console.log(" VARIABLES Y TIPOS ");
+const cadena = "Hola Mundo";
+const numero = 42;
+const bigINT=95468721214454n;
+const booleano = true;
+const nulo = null;
+let indefinido;
+const simbolo = Symbol('un-simbolo');
+const objeto = { nombre: "Juan", edad: 30 };
+const arreglo = [1, 2, 3];
+const conjunto = new Set([2, 4, 6]); 
+const mapa = new Map([['nombre', 'Henry']])
+function unaFuncion() {} ;
+class MiClase {};
+
+
+console.log("cadena:", cadena, "| Tipo:", typeof cadena);
+console.log("numero:", numero, "| Tipo:", typeof numero);
+console.log("bigINT",bigINT,"| Tipo:", typeof bigINT );
+console.log("booleano:", booleano, "| Tipo:", typeof booleano);
+console.log("nulo:", nulo, "| Tipo:", typeof nulo);
+console.log("indefinido:", indefinido, "| Tipo:", typeof indefinido);
+console.log("simbolo:", simbolo.toString(), "| Tipo:", typeof simbolo);
+console.log("objeto:", objeto, "| Tipo:", typeof objeto);
+console.log("arreglo:", arreglo, "| Tipo:", typeof arreglo);
+console.log("conjunto",conjunto,"| Tipo:",typeof conjunto);
+console.log("map",mapa,"| Tipo:",typeof mapa);
+console.log("function",unaFuncion,"| Tipo:", typeof unaFuncion);
+console.log("clase",MiClase,"| Tipo:",typeof MiClase);
+
+
 //objeto
-const persona = {nombre:"Gabriel",sexo:"Masculino"};
+const persona = {};
 console.log("Objeto inicial",persona);
 
 // Agregar a objeto
+persona.nombre="Jose"
+persona.sexo="masculino"
 persona.ocupacion="Estudiante";
 console.log("Objeto luego de agregar propiedades",persona);
 
