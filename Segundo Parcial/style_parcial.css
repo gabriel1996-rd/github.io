@@ -1,0 +1,40 @@
+.carousel_envoltorio{
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 80vh;
+}
+.carousel-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  bottom: 20%;
+}
+.carousel-caption h5 {
+    font-size: 2.5rem;
+
+  }
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}  
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); 
+}
