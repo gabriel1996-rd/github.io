@@ -8,6 +8,8 @@
 --color-rojo: #e50914;
 --color-verde: #46d369;
 --color-search: #abc807;
+--color-search-placeholder:#aaa;
+
 
 }
 * {
@@ -32,6 +34,40 @@ body {
   margin-top: 20px;
 }
 
+/*estilo cards*/
+.card-genre {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+.card-header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-weight: bold;
+  padding: 15px 20px;
+ 
+}
+.card-header.terror{
+    background: #055466;
+    color: white;
+}
+.card-header.comedia{
+    background: #e4890a;
+    color:white;
+}
+.card-header.accion{
+    background: red;
+    color: white;
+}
+
+
+.card-title {
+  margin: 0;
+  color: rgb(9, 9, 9);
+}
 /* Seccion carosel*/
 
 .carousel-section {
@@ -240,6 +276,7 @@ transform: scale(1.1);
  border: 1px solid var(--color-borde);
  transition: all 0.3s;
  font-weight: 600;
+ color:#abc807;
 }
         
 .btn-cine-search:hover {
@@ -257,7 +294,7 @@ transform: scale(1.1);
  transition: all 0.3s;
 }
 .search-input::placeholder {
-color: #aaa; 
+color: var(--color-search-placeholder);
 font-style: italic;}
         
 .search-input:focus {
@@ -312,3 +349,61 @@ font-style: italic;}
  transform: translateY(-2px);
  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
 }
+/* Footer */
+.footer {
+background: var(--color-fondo-oscuro);
+color: var(--color-texto-claro);
+padding: 40px 0;
+margin-top: 50px;
+border-top: 2px solid var(--color-borde);
+}
+        
+.footer-title {
+color: var(--color-oro);
+margin-bottom: 20px;
+font-weight: 600;
+}
+        
+.footer-links-a{
+color: var(--color-texto-claro);
+text-decoration: none;
+display: block;
+margin-bottom: 10px;
+transition: color 0.3s;
+}
+        
+.footer-links-a:hover {
+color: var(--color-oro);
+}
+        
+.social-icons {
+display: flex;
+gap: 15px;
+margin-top: 20px;
+}
+        
+.social-icons a {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.1);
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--color-oro);
+transition: all 0.3s;
+}
+        
+.social-icons a:hover {
+background: var(--color-oro);
+color: var(--color-fondo-oscuro);
+transform: translateY(-5px);
+}
+        
+.copyright {
+text-align: center;
+padding-top: 20px;
+margin-top: 30px;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+        

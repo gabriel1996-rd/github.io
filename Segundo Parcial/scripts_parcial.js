@@ -30,4 +30,12 @@ prevBtn.style.display = 'none';
         nextBtn.style.display = 'none';
             }
         });
-        
+// nav bar
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar-cine');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+            }
+        });        
