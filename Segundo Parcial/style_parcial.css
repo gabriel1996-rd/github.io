@@ -1,3 +1,15 @@
+:root {
+--color-oro: #ffd700;
+--color-oro-oscuro: #eac807;
+--color-borde: rgba(255, 215, 0, 0.5);
+--color-fondo-oscuro: #0d0d0d;
+--color-fondo-medio: #1a1a1a;
+--color-texto-claro: #e0e0e0;
+--color-rojo: #e50914;
+--color-verde: #46d369;
+--color-search: #abc807;
+
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +18,18 @@
   
 }
 body {
-  background-color: #141414;
+  background-color: #941515;
   color: #fff;
   min-height: 100vh;
   overflow-x: hidden;
+  padding-top: 70px;
 }
 
 .container-main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 20px;
 }
 
 /* Seccion carosel*/
@@ -160,6 +174,7 @@ transform: scale(1.1);
  border-bottom: 1px solid var(--color-borde) !important;
  padding: 10px 0 !important;
  transition: all 0.3s ease;
+ z-index: 1000;
 }
         
 .navbar-cine.scrolled {
