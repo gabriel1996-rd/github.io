@@ -15,6 +15,71 @@
     
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-cine fixed-top">
+ <div class="container-fluid">
+  <a class="navbar-brand" href="#">
+   <i class="bi bi-camera-reels"></i> Pop & Corn
+  </a>
+            
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCine">
+   <i class="bi bi-list"></i>
+  </button>
+            
+  <div class="collapse navbar-collapse" id="navbarCine">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <i class="bi bi-house-door"></i> Inicio
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" target="_blank">
+          <i class="bi bi-film"></i> El Séptimo Arte
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="generosDropdown" role="button" data-bs-toggle="dropdown">
+         <i class="bi bi-collection"></i> Géneros
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#accion">
+             <i class="bi bi-lightning-charge"></i> Acción
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#terror">
+              <i class="bi bi-emoji-dizzy"></i> Terror
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#comedia">
+              <i class="bi bi-emoji-laughing"></i> Comedia
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+                
+    <div class="d-flex align-items-center">
+      <form class="d-flex search-form me-3">
+        <input class="form-control search-input me-2" type="search" placeholder="Buscar películas..." aria-label="Search">
+        <button class="btn btn-cine-search" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+                    
+      <button class="btn btn-suscribir" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="bi bi-envelope-paper-fill"></i> Suscribir
+      </button>
+    </div>
+  </div>
+ </div>
+</nav>
+
+
+
+
 <div class="container-main ">
   <div class="carousel-section">
   <h2 class="section-title">Proximos Estrenos en Republica Domicana</h2>
