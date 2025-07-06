@@ -256,6 +256,9 @@ transform: scale(1.1);
  border-radius: 4px;
  transition: all 0.3s;
 }
+.search-input::placeholder {
+color: #aaa; 
+font-style: italic;}
         
 .search-input:focus {
  background-color: var(--color-fondo-medio);
