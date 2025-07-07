@@ -174,6 +174,8 @@ margin-bottom: 50px;
         
 .carousel-container {
  position: relative;
+ overflow: hidden;
+ width: 100%;
 }
         
 .movie-carousel {
@@ -270,7 +272,7 @@ position: relative;
 top: auto; 
 transform: none; 
 width: 100%;
-z-index: 5;
+z-index: 10;
 }
         
 .control-btn {
@@ -285,7 +287,7 @@ align-items: center;
 justify-content: center;
 cursor: pointer;
 transition: all 0.3s;
-opacity: 0.9;
+opacity: 1;
 box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
         
@@ -293,6 +295,10 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 background-color: var(--color-oro-oscuro);
 transform: scale(1.1);
 opacity: 1;
+}
+.control-btn.prev-btn,
+.control-btn.next-btn {
+display: flex !important; 
 }
 
 /* navigation bar */
