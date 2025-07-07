@@ -1,6 +1,7 @@
 //  controles del carrusel
 document.querySelectorAll('.carousel-container').forEach(carousel => {
 const row = carousel.querySelector('.movie-carousel');
+const controls = carousel.querySelector('.carousel-controls');
 const prevBtn = carousel.querySelector('.prev-btn');
 const nextBtn = carousel.querySelector('.next-btn');
             
