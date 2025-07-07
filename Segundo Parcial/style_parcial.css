@@ -378,15 +378,20 @@ margin-bottom: 20px;
 font-weight: 600;
 }
         
-.footer-links-a{
-color: var(--color-texto-claro);
-text-decoration: none;
-display: block;
-margin-bottom: 10px;
-transition: color 0.3s;
+.footer-links {
+display: flex;
+flex-direction: column;
 }
         
-.footer-links-a:hover {
+.footer-link {
+color: var(--color-texto-claro);
+text-decoration: none;
+margin-bottom: 10px;
+transition: color 0.3s;
+padding: 5px 0;
+}
+        
+.footer-link:hover {
 color: var(--color-oro);
 }
         
