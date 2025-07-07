@@ -35,13 +35,14 @@ body {
 }
 
 /*estilo cards*/
-.card-genre {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: #fff;
+
+.genre-card {
+margin-bottom: 30px;
+border: none;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+transition: transform 0.3s ease;
 }
 .card-header {
   border-bottom: 1px solid #ddd;
@@ -50,34 +51,39 @@ body {
   padding: 15px 20px;
  
 }
-.card-header.terror{
-    background: #055466;
-    color: white;
+.card-header.terror { background: #055466; }
+.card-header.comedia { background: #e4890a; }
+.card-header.accion { background: #e50914; }
+.card-header.drama { background: #3c3ce4; }
+.card-header.ciencia { background: #980d93; }
+
+.card-text-style {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: medium;
+background-color: #f5f5f5;
+color: black;
+padding: 20px;
 }
-.card-header.comedia{
-    background: #e4890a;
-    color:white;
+
+.card-body {
+padding: 20px;
 }
-.card-header.accion{
-    background: red;
-    color: white;
+
+.card-body ul {
+padding-left: 20px;
+margin-top: 10px;
 }
-.card-header.drama{
-  background: #141415;
-  color: white;
+
+.card-body li {
+margin-bottom: 8px;
 }
-.card-header.ciencia{
-  background: #5c0259;
-  color: white;
+
+.card-title {
+display: flex;
+align-items: center;
+gap: 10px;
 }
-.card-text-style{
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: medium;
-    background-color: #f5f5f5;
-    color: black;
-    padding: 20px;
-    transition: 0.2seg;
-}
+
 
 
 
