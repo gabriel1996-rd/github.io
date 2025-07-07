@@ -38,4 +38,41 @@ window.addEventListener('scroll', function() {
         } else {
             navbar.classList.remove('scrolled');
             }
-        });        
+        });  
+// toggle para cambiar de dark mode a light mode
+const themeToggle = document.createElement('button');
+themeToggle.classList.add('theme-toggle');
+themeToggle.innerHTML = '<i class="bi bi-moon"></i>';
+
+const navButtons = document.querySelector('.d-flex.align-items-center');
+if (navButtons) {
+  navButtons.appendChild(themeToggle);}
+
+// cambio de tema
+function toggleTheme() {
+  const body = document.body;
+  const isLightTheme = body.classList.contains('light-theme');
+  
+  if (isLightTheme) {
+    body.classList.remove('light-theme');
+    localStorage.setItem('theme', 'dark');
+    themeToggle.innerHTML = '<i class="bi bi-moon"></i>';
+  } else {
+    body.classList.add('light-theme');
+    localStorage.setItem('theme', 'light');
+    themeToggle.innerHTML = '<i class="bi bi-sun"></i>';
+  }
+} 
+function applySavedTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-theme');
+    themeToggle.innerHTML = '<i class="bi bi-sun"></i>';
+  } else {
+    document.body.classList.remove('light-theme');
+    themeToggle.innerHTML = '<i class="bi bi-moon"></i>';
+  }
+} 
+themeToggle.addEventListener('click', toggleTheme);
+document.addEventListener('DOMContentLoaded', applySavedTheme);
+
