@@ -262,35 +262,37 @@ font-weight: 600;
 }
         
 .carousel-controls {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-width: 100%;
 display: flex;
-justify-content: space-between;
-padding: 0 10px;
+justify-content: center;
+gap: 20px;
+margin-top: 15px;
+position: relative; 
+top: auto; 
+transform: none; 
+width: 100%;
 z-index: 5;
 }
         
 .control-btn {
-width: 45px;
-height: 45px;
+background-color: var(--color-oro);
+color: var(--color-fondo-oscuro);
+border: none;
+width: 40px;
+height: 40px;
 border-radius: 50%;
-background-color: rgba(20,20,20,0.8);
-color: #fff;
 display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
-border: 2px solid rgba(255,255,255,0.3);
 transition: all 0.3s;
-opacity: 0.8;
+opacity: 0.9;
+box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
         
 .control-btn:hover {
-background-color: #e50914;
-opacity: 1;
+background-color: var(--color-oro-oscuro);
 transform: scale(1.1);
+opacity: 1;
 }
 
 /* navigation bar */

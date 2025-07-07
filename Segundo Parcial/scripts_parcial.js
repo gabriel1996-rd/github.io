@@ -2,8 +2,8 @@
 document.querySelectorAll('.carousel-container').forEach(carousel => {
 const row = carousel.querySelector('.movie-carousel');
 const controls = carousel.querySelector('.carousel-controls');
-const prevBtn = carousel.querySelector('.prev-btn');
-const nextBtn = carousel.querySelector('.next-btn');
+const prevBtn = controls.querySelector('.prev-btn'); 
+const nextBtn = controls.querySelector('.next-btn'); 
             
 //  clic en los botones
 nextBtn.addEventListener('click', () => {
