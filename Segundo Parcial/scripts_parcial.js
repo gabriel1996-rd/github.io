@@ -44,7 +44,7 @@ window.addEventListener('scroll', function() {
 
 // Toggle de tema claro/oscuro
 const themeToggle = document.createElement('button');
-themeToggle.classList.add('theme-toggle');
+themeToggle.classList.add('theme-toggle', 'btn');
 themeToggle.innerHTML = '<i class="bi bi-moon"></i>';
 
 // Buscar el contenedor de botones en la barra de navegación
@@ -87,3 +87,6 @@ themeToggle.addEventListener('click', toggleTheme);
 // Aplicar tema al cargar
 document.addEventListener('DOMContentLoaded', applySavedTheme);
 
+
+  
+ 
