@@ -86,3 +86,4 @@ themeToggle.addEventListener('click', toggleTheme);
 
 // Aplicar tema al cargar
 document.addEventListener('DOMContentLoaded', applySavedTheme);
+
