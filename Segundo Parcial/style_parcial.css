@@ -620,7 +620,7 @@ color: #333;
 border-color: var(--color-oro);
 box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
 outline: none;
-background: rgba(40, 40, 50, 0.9);
+background: rgba(92, 92, 203, 0.9);
 }
 /* modo claro*/
 body.light-theme .contact-form input:focus, 
