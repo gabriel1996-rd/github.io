@@ -4,12 +4,12 @@ document.querySelectorAll('.carousel-container').forEach(carousel => {
     const prevBtn = carousel.querySelector('.prev-btn');
     const nextBtn = carousel.querySelector('.next-btn');
     
-    // Evento para botón siguiente
+    
     nextBtn.addEventListener('click', () => {
         row.scrollBy({ left: 300, behavior: 'smooth' });
     });
     
-    // Evento para botón anterior
+    
     prevBtn.addEventListener('click', () => {
         row.scrollBy({ left: -300, behavior: 'smooth' });
     });
@@ -47,7 +47,7 @@ const themeToggle = document.createElement('button');
 themeToggle.classList.add('theme-toggle', 'btn');
 themeToggle.innerHTML = '<i class="bi bi-moon"></i>';
 
-// Buscar el contenedor de botones en la barra de navegación
+
 const navButtons = document.querySelector('.d-flex.align-items-center');
 if (navButtons) {
     navButtons.appendChild(themeToggle);
@@ -81,12 +81,96 @@ function applySavedTheme() {
     }
 }
 
-// Event listeners
+
 themeToggle.addEventListener('click', toggleTheme);
 
 // Aplicar tema al cargar
 document.addEventListener('DOMContentLoaded', applySavedTheme);
 
 
-  
+ // ALERTAS 
+function showAlert(message, type = 'success') {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show fixed-top mt-5 mx-3`;
+    alertDiv.role = 'alert';
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    
+    document.body.prepend(alertDiv);
+    
+    
+    setTimeout(() => {
+        const bsAlert = new bootstrap.Alert(alertDiv);
+        bsAlert.close();
+    }, 5000);
+}
+
+//  Formulario de contacto
+document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    
+    const requiredFields = this.querySelectorAll('[required]');
+    let isValid = true;
+    
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            isValid = false;
+            field.classList.add('is-invalid');
+        } else {
+            field.classList.remove('is-invalid');
+        }
+    });
+    
+    
+    const email = document.getElementById('email').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!emailRegex.test(email)) {
+        document.getElementById('email').classList.add('is-invalid');
+        showAlert('Por favor ingrese un email válido', 'danger');
+        isValid = false;
+    }
+    
+    if (!isValid) {
+        return;
+    }
+    
+    showAlert('Mensaje enviado con éxito!');
+    this.submit();
+});
+
+//  botón de suscripción
+
+document.querySelector('#exampleModal .btn-primary')?.addEventListener('click', function() {
+    const emailInput = document.querySelector('#exampleModal input[type="email"]');
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!email || !emailRegex.test(email)) {
+        emailInput.classList.add('is-invalid');
+        showAlert('Por favor ingrese un email válido', 'danger');
+        return;
+    }
+    
+    showAlert('¡Suscripción exitosa! Gracias por suscribirte.');
+    
+    // Cerrar el modal después de suscribirse
+    const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+    modal.hide();
+    
+    
+    emailInput.value = '';
+    emailInput.classList.remove('is-invalid');
+});
+
+
+document.getElementById('exampleModal')?.addEventListener('hidden.bs.modal', function() {
+    const emailInput = this.querySelector('input[type="email"]');
+    emailInput.value = '';
+    emailInput.classList.remove('is-invalid');
+});
+
  
