@@ -10,6 +10,101 @@
     <meta name="author" content="Gabriel Lira">
 </head>
 <body>
-    
+  
+<!-- Sección de Demostraciones jQuery -->
+        <div class="jquery-demo">
+            <h2 class="section-title"><i class="bi bi-magic"></i> Demostraciones Interactivas con jQuery</h2>
+            
+            <!-- 1. Cambiar imagen al pasar el mouse -->
+            <div class="demo-section">
+                <h3 class="demo-title"><i class="bi bi-image"></i> Cambiar Imagen al Pasar el Mouse</h3>
+                <div class="demo-content">
+                    <div class="demo-description">
+                        <p>En esta demostración, al pasar el cursor sobre la imagen, se cambiará a otra imagen relacionada con el cine. Al retirar el cursor, la imagen volverá a la original.</p>
+                        <p>Esta técnica es útil para mostrar diferentes aspectos de un producto o, en este caso, de una película.</p>
+                    </div>
+                    <div class="demo-interactive">
+                        <img id="cambiarImagen" class="demo-image" src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500" alt="Cine">
+                        <p class="text-center mt-2">Pasa el cursor sobre la imagen</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 2. Cambiar color al hacer click -->
+            <div class="demo-section">
+                <h3 class="demo-title"><i class="bi bi-palette"></i> Cambiar Color al Hacer Click</h3>
+                <div class="demo-content">
+                    <div class="demo-description">
+                        <p>Haz clic en el botón para cambiar el color de este elemento. Cada clic generará un nuevo color de fondo aleatorio.</p>
+                        <p>Esta funcionalidad se puede utilizar para personalizar temas o resaltar elementos importantes en una página.</p>
+                    </div>
+                    <div class="demo-interactive">
+                        <div id="cambiarColor" class="demo-box">Haz clic en el botón para cambiar mi color</div>
+                        <div class="demo-buttons">
+                            <button id="btnCambiarColor" class="demo-btn">Cambiar Color</button>
+                            <button id="btnResetColor" class="demo-btn btn-reset">Color Original</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 3. Modificar texto al hacer click -->
+            <div class="demo-section">
+                <h3 class="demo-title"><i class="bi bi-textarea-t"></i> Modificar Texto al Hacer Click</h3>
+                <div class="demo-content">
+                    <div class="demo-description">
+                        <p>Con jQuery podemos cambiar dinámicamente el contenido de cualquier elemento. Haz clic en los botones para ver diferentes textos relacionados con el cine.</p>
+                        <p>Esta técnica es útil para mostrar información adicional o cambiar el contenido según las acciones del usuario.</p>
+                    </div>
+                    <div class="demo-interactive">
+                        <div id="modificarTexto" class="demo-paragraph">
+                            Este es el texto original. Haz clic en los botones para modificarlo.
+                        </div>
+                        <div class="demo-buttons">
+                            <button id="btnTexto1" class="demo-btn">Texto sobre Acción</button>
+                            <button id="btnTexto2" class="demo-btn">Texto sobre Comedia</button>
+                            <button id="btnTextoOriginal" class="demo-btn btn-reset">Texto Original</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 4. Animación al hacer click -->
+            <div class="demo-section">
+                <h3 class="demo-title"><i class="bi bi-stars"></i> Animación al Hacer Click</h3>
+                <div class="demo-content">
+                    <div class="demo-description">
+                        <p>jQuery permite crear animaciones fluidas con solo unas pocas líneas de código. Haz clic en el botón o directamente en el elemento para ver una animación.</p>
+                        <p>Las animaciones mejoran la experiencia de usuario y hacen que las interacciones sean más atractivas.</p>
+                    </div>
+                    <div class="demo-interactive">
+                        <div id="animarElemento" class="demo-animation-box">Haz clic para animar</div>
+                        <div class="demo-buttons">
+                            <button id="btnAnimar" class="demo-btn">Iniciar Animación</button>
+                            <button id="btnResetAnimacion" class="demo-btn btn-reset">Restaurar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 5. Ocultar elemento al hacer click -->
+            <div class="demo-section">
+                <h3 class="demo-title"><i class="bi bi-eye-slash"></i> Ocultar Elemento al Hacer Click</h3>
+                <div class="demo-content">
+                    <div class="demo-description">
+                        <p>Al hacer clic en este elemento, desaparecerá con un efecto de desvanecimiento. Puedes recuperarlo usando el botón "Mostrar Elemento".</p>
+                        <p>Ocultar elementos es útil para gestionar el espacio en pantalla o crear interacciones como menús desplegables.</p>
+                    </div>
+                    <div class="demo-interactive">
+                        <div id="ocultarElemento" class="demo-hide-box">Haz clic para ocultarme</div>
+                        <div class="demo-buttons">
+                            <button id="btnMostrar" class="demo-btn btn-reset">Mostrar Elemento</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
 </body>
 </html>
