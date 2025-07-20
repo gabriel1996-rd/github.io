@@ -1,5 +1,5 @@
 $(document).ready(function() {
-            // 1. Cambiar imagen al pasar el mouse
+// 1. Cambiar imagen al pasar el mouse
 $("#cambiarImagen").hover(
     function() {
                     
