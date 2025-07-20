@@ -2,11 +2,11 @@ $(document).ready(function() {
             // 1. Cambiar imagen al pasar el mouse
             $("#cambiarImagen").hover(
                 function() {
-                    // Al entrar el mouse
+                    
                     $(this).attr("src", "elpadrino.jpg");
                 },
                 function() {
-                    // Al salir el mouse
+                    
                     $(this).attr("src", "pulpfiction.jpg");
                 }
             );
@@ -24,13 +24,11 @@ $(document).ready(function() {
                 
                 $("#cambiarColor")
                     .css("background", randomColor)
-                    .text("¡Color cambiado!");
             });
             
             $("#btnResetColor").click(function() {
                 $("#cambiarColor")
                     .css("background", "linear-gradient(45deg, #ff9966, #ff5e62)")
-                    .text("Haz clic en el botón para cambiar mi color");
             });
             
             // 3. Modificar texto al hacer click
@@ -47,29 +45,23 @@ $(document).ready(function() {
             });
             
             // 4. Animación al hacer click
-            function animarElemento() {
-                $("#animarElemento")
-                    .animate({left: '100px'}, 500)
-                    .animate({top: '50px'}, 500)
-                    .animate({width: '200px', height: '200px'}, 500)
-                    .animate({left: '0', top: '0', width: '120px', height: '120px'}, 800)
-                    .css("background", "linear-gradient(45deg, #ff5e62, #ff9966)");
-            }
-            
-            $("#btnAnimar").click(animarElemento);
-            $("#animarElemento").click(animarElemento);
-            
-            $("#btnResetAnimacion").click(function() {
-                $("#animarElemento")
-                    .stop(true)
-                    .css({
-                        left: '0', 
-                        top: '0', 
-                        width: '120px', 
-                        height: '120px',
-                        background: "linear-gradient(45deg, #41b883, #2c7d5a)"
+             $("#btnPulse").click(function() {
+                $("#animarElemento img")
+                    .addClass("pulse")
+                    .on('animationend', function() {
+                        $(this).removeClass("pulse");
                     });
             });
+            
+            
+            $("#btnRotate").click(function() {
+                $("#animarElemento img")
+                    .addClass("rotate")
+                    .on('animationend', function() {
+                        $(this).removeClass("rotate");
+                    });
+            });
+            
             
             // 5. Ocultar elemento al hacer click sobre él
             $("#ocultarElemento").click(function() {

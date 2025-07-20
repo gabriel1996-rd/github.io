@@ -12,6 +12,50 @@ min-height: 100vh;
 padding-top: 70px;
 }
 
+.gold-theme {
+max-width: 1200px;
+margin: 40px auto;
+padding: 30px;
+background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+border-radius: 20px;
+box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+border: 1px solid rgba(212, 175, 55, 0.3);
+position: relative;
+overflow: hidden;
+}
+        
+.gold-theme::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 5px;
+background: linear-gradient(90deg, #d4af37, #a67c00, #d4af37);
+}
+        
+.header {
+text-align: center;
+margin-bottom: 50px;
+padding-bottom: 20px;
+border-bottom: 2px solid rgba(212, 175, 55, 0.5);
+}
+        
+.header h1 {
+font-size: 2.8rem;
+margin-bottom: 15px;
+color: #d4af37;
+text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+font-weight: 700;
+}
+        
+.header p {
+font-size: 1.2rem;
+color: #b0b0b0;
+max-width: 800px;
+margin: 0 auto;
+line-height: 1.6;
+}
 
 
 
@@ -36,6 +80,15 @@ font-size: 1.4rem;
 margin-bottom: 20px;
 padding-bottom: 10px;
 border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+#cambiarColor {
+width: 100%;
+min-height: 150px; 
+height: auto; 
+padding: 20px; 
+display: block; 
+overflow: auto; 
 }
         
 .demo-content {
@@ -162,3 +215,25 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 background: linear-gradient(to right, #ffd700, #ff9d00);
 color: #1a1a2e;
 }
+
+.pulse {
+animation: pulse 0.7s ease;
+}
+        
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.15); }
+100% { transform: scale(1); }
+}
+        
+.rotate {
+animation: rotate 1.2s ease;
+}
+        
+@keyframes rotate {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+        
+     
+
