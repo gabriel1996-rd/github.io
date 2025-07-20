@@ -156,19 +156,7 @@ line-height: 1.6;
 box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
         
-.demo-animation-box {
-width: 120px;
-height: 120px;
-background: linear-gradient(45deg, #41b883, #2c7d5a);
-border-radius: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-color: white;
-cursor: pointer;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
+
         
 .demo-hide-box {
 width: 150px;
