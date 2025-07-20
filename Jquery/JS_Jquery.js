@@ -45,30 +45,32 @@ $(document).ready(function() {
             });
             
             // 4. Animación al hacer click
-             $("#btnPulse").click(function() {
-                $("#animarElemento img")
-                    .addClass("pulse")
-                    .on('animationend', function() {
-                        $(this).removeClass("pulse");
-                    });
-            });
-            
-            
-            $("#btnRotate").click(function() {
-                $("#animarElemento img")
-                    .addClass("rotate")
-                    .on('animationend', function() {
-                        $(this).removeClass("rotate");
-                    });
-            });
+$("#btnPulse").click(function() {
+    $("#animarElemento img")
+        .addClass("pulse")
+        .on('animationend', function() {
+            $(this).removeClass("pulse");
+        });
+});
+
+$("#btnRotate").click(function() {
+    $("#animarElemento img")
+        .addClass("rotate")
+        .on('animationend', function() {
+            $(this).removeClass("rotate");
+        });
+}); 
+
+
+
             
             
             // 5. Ocultar elemento al hacer click sobre él
-            $("#ocultarElemento").click(function() {
-                $(this).fadeOut(1000);
-            });
+$("#ocultarElemento").click(function() {
+    $(this).fadeOut(1000);
+});
             
-            $("#btnMostrar").click(function() {
-                $("#ocultarElemento").fadeIn(800);
-            });
-        });
+$("#btnMostrar").click(function() {
+    $("#ocultarElemento").fadeIn(800);
+});
+});
